@@ -1,7 +1,24 @@
 {
   "expo": {
-    "name": "ChromAid",
-    "slug": "chromaid",
+    "expo": {
+      "name": "ChromAid",
+      "slug": "chromaid",
+      "scheme": "chromaid",
+      "ios": {
+        "supportsTablet": true,
+        "infoPlist": {
+          "NSCameraUsageDescription": "Usamos a câmera para identificar cores da imagem."
+        }
+      },
+      "android": {
+        "permissions": [
+          "CAMERA"
+        ]
+      },
+      "web": {
+        "bundler": "metro"
+      }
+    },
     "version": "1.0.0",
     "orientation": "portrait",
     "userInterfaceStyle": "light",
@@ -16,8 +33,11 @@
     },
     "android": {},
     "web": {
-      "bundler": "metro",
-      "output": "static"
-    }
+      "bundler": "metro"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-web-browser"
+    ]
   }
 }

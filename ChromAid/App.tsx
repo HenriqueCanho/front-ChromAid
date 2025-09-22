@@ -1,5 +1,5 @@
-import { HomeScreen } from '@/screens/HomeScreen';
+import { Home } from './app/';
 
 export default function App() {
-  return <HomeScreen />;
+  return <Home />;
 }
